@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<thing:thing-descriptions bindingId="zigbee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:thing="https://openhab.org/schemas/thing-description/v1.0.0"
+	xsi:schemaLocation="https://openhab.org/schemas/thing-description/v1.0.0 https://openhab.org/schemas/thing-description-1.0.0.xsd">
+
+	
+	<thing-type id="xiaomi_lumicube" listed="false">
+ 		<label>Aqara Cube</label>
+ 		<description>Aqara Cube Controller</description>
+ 		<category>WallSwitch</category>
+ 		<channels>
+			<channel id="multistate1" typeId="multistateinput">
+ 				<label>Multi State</label>
+ 				<properties>
+ 					<property name="zigbee_endpoint">1</property>
+					<property name="zigbee_inputclusters">1012</property>
+ 				</properties>
+ 			</channel>
+			<channel id="multistate2" typeId="multistateinput">
+ 				<label>Multi State</label>
+ 				<properties>
+ 					<property name="zigbee_endpoint">2</property>
+					<property name="zigbee_inputclusters">1012</property>
+ 				</properties>
+ 			</channel>
+			<channel id="analog3" typeId="analoginput">
+ 				<label>Analog State</label>
+ 				<properties>
+ 					<property name="zigbee_endpoint">3</property>
+					<property name="zigbee_inputclusters">000C</property>
+ 				</properties>
+ 			</channel>
+		</channels>
+
+		<representation-property>zigbee_macaddress</representation-property>
+
+		<config-description>
+			<parameter name="zigbee_macaddress" type="text" readOnly="true" required="true">
+				<label>MAC Address</label>
+			</parameter>
+		</config-description>
+	</thing-type>
+</thing:thing-descriptions>
