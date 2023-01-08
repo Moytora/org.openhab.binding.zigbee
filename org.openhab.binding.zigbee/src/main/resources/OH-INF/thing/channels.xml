@@ -397,6 +397,24 @@
         <category>HVAC</category>
         <state pattern="%.0f %%" readOnly="true" />
     </channel-type>
+    
+    <!-- Analog input sensor -->
+    <channel-type id="analoginput">
+        <item-type>Number</item-type>
+        <label>Analog Input Sensor</label>
+        <description>Indicates an analog input sensor state</description>
+        <category></category>
+        <state readOnly="true"></state>
+    </channel-type>
+    
+    <!-- MultiState input sensor -->
+    <channel-type id="multistateinput">
+        <item-type>Number</item-type>
+        <label>MultiState Input Sensor</label>
+        <description>Indicates a set member input sensor state</description>
+        <category></category>
+        <state readOnly="true"></state>
+    </channel-type>
 
 	<!-- Warning device -->
 	<channel-type id="warning_device">
