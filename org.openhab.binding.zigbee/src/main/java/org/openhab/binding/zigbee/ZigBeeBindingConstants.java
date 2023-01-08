@@ -86,6 +86,14 @@ public class ZigBeeBindingConstants {
     public static final String CHANNEL_NAME_BINARYINPUT = "binaryinput";
     public static final String CHANNEL_LABEL_BINARYINPUT = "Binary Input";
     public static final ChannelTypeUID CHANNEL_BINARYINPUT = new ChannelTypeUID("zigbee:binaryinput");
+    
+     public static final String CHANNEL_NAME_ANALOGINPUT = "analoginput";
+     public static final String CHANNEL_LABEL_ANALOGINPUT = "Analog Input";
+     public static final ChannelTypeUID CHANNEL_ANALOGINPUT = new ChannelTypeUID("zigbee:analoginput");
+     
+     public static final String CHANNEL_NAME_MULTISTATEINPUT = "multistateinput";
+     public static final String CHANNEL_LABEL_MULTISTATEINPUT = "Multistate Input";
+     public static final ChannelTypeUID CHANNEL_MULTISTATEINPUT = new ChannelTypeUID("zigbee:multistateinput");
 
     public static final String CHANNEL_NAME_IAS_CODETECTOR = "cosensor";
     public static final String CHANNEL_LABEL_IAS_CODETECTOR = "Carbon Monoxide Detector";
